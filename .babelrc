@@ -13,6 +13,11 @@
   "plugins": [
     "transform-es2015-modules-commonjs",
     "transform-decorators-legacy",
-    "lodash"
+    "lodash",
+    ["import", { 
+      "libraryName": "antd", 
+      "libraryDirectory": "lib",
+      "style": "css" 
+    }]
   ]
 }

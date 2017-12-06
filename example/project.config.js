@@ -7,7 +7,7 @@ module.exports = {
   __PROD__     : NODE_ENV === 'production',
   __DEV__      : NODE_ENV === 'development',
   globals      : {
-    __DEAKTOP__ : false
+    __DESKTOP__ : true
   },
   basePath     : __dirname,
   srcDir       : 'src',

@@ -1,26 +1,41 @@
-
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
+import Modal from './modal'
+import confirm from './confirm'
 
-export default class KenoteLayout extends PureComponent {
-
-  static propTypes = {
-    name: PropTypes.string,
-    children: PropTypes.node
-  }
-
-  static defaultProps = {
-    name: 'test',
-    children: null
-  }
-
-  render () {
-    const { name, children } = this.props
-    return (
-      <div>
-        <p>name: {name || 'test'}</p>
-        {children}
-      </div>
-    )
-  }
+Modal.info = (options) => {
+  confirm({
+    type: 'info',
+    ...options
+  })
 }
+
+Modal.warn = Modal.warning = (options) => {
+  confirm({
+    type: 'warning',
+    ...options
+  })
+}
+
+Modal.success = (options) => {
+  confirm({
+    type: 'success',
+    ...options
+  })
+}
+
+Modal.error = (options) => {
+  confirm({
+    type: 'error',
+    ...options
+  })
+}
+
+Modal.confirm = (options) => {
+  confirm({
+    type: 'confirm',
+    ...options
+  })
+}
+
+export default Modal
