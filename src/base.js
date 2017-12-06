@@ -10,8 +10,9 @@ const customStyles = {
     right             : 0,
     bottom            : 0,
     backgroundColor   : 'rgba(55, 55, 55, 0.6)',
-    opacity               : 0,
-    transition            : 'all .5s'
+    opacity           : 0,
+    transition        : 'all .5s',
+    zIndex            : 2
   },
   content : {
     top                   : '20%',
