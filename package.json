@@ -1,6 +1,6 @@
 {
   "name": "kenote-react-admin-modal",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Admin Modal for React",
   "main": "lib/index.js",
   "repository": "https://github.com/thondery/kenote-react-admin-modal.git",
@@ -19,6 +19,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "codecov": "^3.0.0",
     "jest": "^21.2.1",
+    "node-sass": "^4.7.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-test-renderer": "^16.0.0"
@@ -28,9 +29,10 @@
     "react": ">=15.6.0"
   },
   "scripts": {
-    "build": "babel src -d lib",
+    "build": "babel src -d lib && npm run sass",
     "test": "jest --u --colors",
-    "codecov": "jest --u --colors --coverage && codecov"
+    "codecov": "jest --u --colors --coverage && codecov",
+    "sass": "node-sass --output styles styles"
   },
   "jest": {
     "moduleFileExtensions": [

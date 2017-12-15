@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import ModalBase from './base'
 import { Button, Icon } from 'antd'
-import '../styles/modal.scss'
+import '../styles/modal.css'
 import _ from 'lodash'
 
 export default class Modal extends PureComponent {

@@ -112,6 +112,7 @@ export default class ModalBase extends PureComponent {
         parentSelector={getContainer}
         onRequestClose={this.handleRequestClose}
         onAfterOpen={this.handleAfterOpen}
+        ariaHideApp={false}
         >
         {children}
       </ReactModal>
